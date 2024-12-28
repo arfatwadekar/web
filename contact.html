@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rashid Website</title>
+
+    <!-- font awesome cdn links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Custom Css link -->
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+  </head>
+  <body>
+    <!-- ================ Header section ================= -->
+    <header class="header">
+      <a href="/index.html">
+        <img src="./image/kst_logo.png" alt="" width="100px" loading="lazy" />
+      </a>
+
+      <nav class="navbar">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/products.html">Products</a>
+        <a href="/contact.html">Contact Us</a>
+      </nav>
+
+      <div id="menu-btn" class="fa fa-bars"></div>
+    </header>
+
+    <!-- =============== Home Section =============== -->
+    <section class="home" id="home" data-aos="zoom-in">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <section
+            class="swiper-slide slide"
+            style="background: url(/image/home3.png) no-repeat"
+          >
+            <div class="content">
+              <h1 class="heading" style="color: black; font-size: 5rem">
+                Contact Us
+              </h1>
+            </div>
+            <!-- <h1 class="heading" style="color: black;">Contact Us</h1> -->
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= contact section ============ -->
+    <section class="contact" id="contact">
+      <!-- <h1 class="heading">Contact Us</h1> -->
+      <!-- <div class="contact-buttons">
+    <button class="box contact-info">
+      <h1>Address Here</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam minima, dolor ab quasi blanditiis vero quia ducimus excepturi nobis ullam?</p>
+    </button>
+    <button class="box contact-info">
+      <h1>Phone Number</h1>
+      <p>+91 99829283844</p>
+      <p>+91 99829283844</p>
+      <p>+91 99829283844</p>
+    </button>
+    <button class="box contact-info">
+      <h1>Opening Hours</h1>
+      <p>Monday - Friday [10:00 AM to 12:00 PM]</p>
+      <p>Monday - Friday [10:00 AM to 12:00 PM]</p>
+    </button>
+  </div> -->
+
+      <div class="contact_box_container">
+        <div class="contact_box" data-aos="zoom-in">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>Mumbai , India - 400102</h3>
+        </div>
+        <div class="contact_box" data-aos="zoom-in">
+          <i class="fas fa-envelope"></i>
+          <h3>YourEmail@gmail.com</h3>
+        </div>
+        <div class="contact_box" data-aos="zoom-in">
+          <i class="fas fa-phone"></i>
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 10px;
+              gap: 10px;
+            "
+          >
+            <h3>+91 2948495690</h3>
+            <span style="color: white; font-size: 1.5rem">/</span>
+            <h3>+91 2948495690</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d120614.85869733979!2d73.012196!3d19.142093!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c0a0c6ace46b%3A0xf8a711958d286837!2sGolden%20Garage!5e0!3m2!1sen!2sus!4v1734883778885!5m2!1sen!2sus"
+          class="map"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          data-aos="fade-right"
+        ></iframe>
+
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          data-aos="fade-left"
+          onsubmit="resetForm(event, this);"
+        >
+          <h3>Get In Touch</h3>
+          <input
+            type="hidden"
+            name="access_key"
+            value="bfb3fd82-e439-4c0d-ac59-c5f76e11a843"
+          />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            class="box"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            class="box"
+          />
+          <input
+            type="number"
+            name="number"
+            id="phone"
+            placeholder="Phone"
+            class="box"
+          />
+          <textarea
+            placeholder="Message"
+            name="message"
+            class="box"
+            rows="10"
+          ></textarea>
+          <button type="submit" class="btn about_btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ==================== WhatsApp ============================ -->
+    <div class="whatsapp_float" data-aos="zoom-in">
+      <a
+        class="analysisBtn"
+        data-platform="whatsapp"
+        href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER&text=Hello,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+        target="_blank"
+      >
+        <i class="ri-whatsapp-line" style="color: #24e531"></i>
+      </a>
+    </div>
+
+    <!-- ==================== Footer ============================ -->
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer-box">
+          <a href="/index.html">
+            <img
+              src="./image/kst_logo.png"
+              alt=""
+              width="100px"
+              loading="lazy"
+            />
+          </a>
+
+          <p class="footer_para">
+            Lorem ipsum dolor sit amet consectetur <br />
+            adipisicing elit. Nobis, quia Lorem ipsum <br />dolor sit amet..
+          </p>
+          <div class="social">
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <h3>Pages</h3>
+          <a href="/index.html">Home</a>
+          <a href="/about.html">About Us</a>
+          <a href="/about.html">Products</a>
+          <a href="/contact.html">Contact Us</a>
+        </div>
+
+        <div class="footer-box">
+          <h3>Opening Hours</h3>
+          <a href="#">Monday - friday</a>
+          <a href="#">Saturday - sunday</a>
+        </div>
+
+        <div class="footer-box">
+          <h3>Contact Info</h3>
+          <p>Mumbra Kausa</p>
+          <p>Thane</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      function resetForm(event, form) {
+        // Let the form submit normally first
+        setTimeout(() => {
+          form.reset(); // Reset the form after submission
+        }, 500); // Delay to ensure data is sent
+      }
+    </script>
+
+    <!-- Swiper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- custome js file -->
+    <script src="./main.js"></script>
+  </body>
+</html>

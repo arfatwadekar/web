@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rashid Website</title>
+
+    <!-- Font Awesome CDN Links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Remix Icon CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Custom CSS Links -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "RhLFkpM_NHGoiGH_X",
+        });
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!-- =============== Header Section ===============-->
+    <header class="header">
+      <a href="/index.html">
+        <img
+          src="./image/kst_logo.png"
+          alt="Logo"
+          width="100px"
+          loading="lazy"
+        />
+      </a>
+      <nav class="navbar">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/products.html">Products</a>
+        <a href="/contact.html">Contact Us</a>
+        <a href="#blog">Blogs</a>
+      </nav>
+      <div id="menu-btn" class="fa fa-bars"></div>
+    </header>
+
+    <!-- =============== Home Section =============== -->
+    <section class="home" id="home">
+      <div class="swiper home-slider" data-aos="zoom-in">
+        <div class="swiper-wrapper">
+          <section
+            class="swiper-slide slide"
+            style="background: url(/image/home3.png) no-repeat"
+          >
+            <div class="content" data-aos="flip-left">
+              <h3>We Provide Best Services</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo et
+                ad quidem beatae ab expedita deserunt delectus accusamus vero
+                placeat.
+              </p>
+              <a href="/about.html" class="btn">Get Started</a>
+            </div>
+          </section>
+          <section
+            class="swiper-slide slide"
+            style="background: url(/image/home_bg.jpg) no-repeat"
+          >
+            <div class="content" data-aos="flip-left">
+              <h3>We Provide Best Services</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo et
+                ad quidem beatae ab expedita deserunt delectus accusamus vero
+                placeat.
+              </p>
+              <a href="/about.html" class="btn">Get Started</a>
+            </div>
+          </section>
+          <section
+            class="swiper-slide slide"
+            style="background: url(/image/home.jpg) no-repeat"
+          >
+            <div class="content" data-aos="flip-left">
+              <h3>We Provide Best Services</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo et
+                ad quidem beatae ab expedita deserunt delectus accusamus vero
+                placeat.
+              </p>
+              <a href="/about.html" class="btn">Get Started</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!--  =============== About Section =============== -->
+    <section class="about" id="about">
+      <h1
+        class="heading"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="200"
+        data-aos-offset="0"
+      >
+        About Us
+      </h1>
+      <div class="row">
+        <div class="video" data-aos="fade-right">
+          <video src="/image/page1_bg.mp4" loop muted autoplay></video>
+        </div>
+        <div class="content" data-aos="fade-left">
+          <h3>We Will Provide You the Best Work Which You Dreamt For!</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+            reiciendis quod eos veritatis. Fuga illo doloribus totam harum
+            sapiente voluptas.
+          </p>
+          <a href="/about.html" class="btn about_btn">Read More</a>
+        </div>
+      </div>
+      <div class="box-container">
+        <div class="box" data-aos="flip-up">
+          <h3>10+</h3>
+          <p>Years of Experience</p>
+        </div>
+        <div class="box" data-aos="flip-up">
+          <h3>1500+</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="box" data-aos="flip-up">
+          <h3>790+</h3>
+          <p>Satisfied Clients</p>
+        </div>
+        <div class="box" data-aos="flip-up">
+          <h3>790+</h3>
+          <p>Active Workers</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============== Products Section =============== -->
+    <section class="products" id="products">
+      <div class="products-header" data-aos="zoom-in-right">
+        <h1 class="heading">Our Products</h1>
+        <a
+          href="/products.html"
+          class="btn"
+          style="background-color: var(--text-dark); margin-bottom: 2rem"
+          >View All</a
+        >
+      </div>
+      <div class="swiper projectSwiper" data-aos="zoom-in">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="project_card">
+              <div class="project_img">
+                <img
+                  src="./image/product_img.webp"
+                  alt="Product"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project_info">
+                <h2>Product Name</h2>
+                <h1>Product Description</h1>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project_card">
+              <div class="project_img">
+                <img src="./image/p1_img.webp" alt="Product" loading="lazy" />
+              </div>
+              <div class="project_info">
+                <h2>Product Name</h2>
+                <h1>Product Description</h1>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project_card">
+              <div class="project_img">
+                <img src="./image/p1_img.webp" alt="Product" loading="lazy" />
+              </div>
+              <div class="project_info">
+                <h2>Product Name</h2>
+                <h1>Product Description</h1>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project_card">
+              <div class="project_img">
+                <img src="./image/p1_img.webp" alt="Product" loading="lazy" />
+              </div>
+              <div class="project_info">
+                <h2>Product Name</h2>
+                <h1>Product Description</h1>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project_card">
+              <div class="project_img">
+                <img src="./image/p1_img.webp" alt="Product" loading="lazy" />
+              </div>
+              <div class="project_info">
+                <h2>Product Name</h2>
+                <h1>Product Description</h1>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project_card">
+              <div class="project_img">
+                <img src="./image/p1_img.webp" alt="Product" loading="lazy" />
+              </div>
+              <div class="project_info">
+                <h2>Product Name</h2>
+                <h1>Product Description</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============== Contact Section =============== -->
+    <section class="contact" id="contact">
+      <h1
+        class="heading"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="200"
+        data-aos-offset="0"
+      >
+        Contact Us
+      </h1>
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d120614.85869733979!2d73.012196!3d19.142093!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c0a0c6ace46b%3A0xf8a711958d286837!2sGolden%20Garage!5e0!3m2!1sen!2sus!4v1734883778885!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          class="map"
+          referrerpolicy="no-referrer-when-downgrade"
+          data-aos="fade-right"
+        ></iframe>
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          data-aos="fade-left"
+          onsubmit="resetForm(event, this);"
+        >
+          <h3>Get In Touch</h3>
+          <input
+            type="hidden"
+            name="access_key"
+            value="bfb3fd82-e439-4c0d-ac59-c5f76e11a843"
+          />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            class="box"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            class="box"
+          />
+          <input
+            type="number"
+            name="number"
+            id="phone"
+            placeholder="Phone"
+            class="box"
+          />
+          <textarea
+            placeholder="Message"
+            name="message"
+            class="box"
+            rows="10"
+          ></textarea>
+          <button type="submit" class="btn about_btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- =============== Blog Section =============== -->
+    <section class="blog" id="blog">
+      <h1
+        class="heading"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="200"
+        data-aos-offset="0"
+      >
+        Our Blogs
+      </h1>
+      <div class="swiper blogs-slider" data-aos="zoom-in">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="./image/home3.png" alt="Blog" loading="lazy" />
+            </div>
+            <div class="content">
+              <h3>Blog Title Goes Here</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam,
+                nisi?
+              </p>
+              <!-- <button class="btn">Read More</button> -->
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="./image/home3.png" alt="Blog" loading="lazy" />
+            </div>
+            <div class="content">
+              <h3>Blog Title Goes Here</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam,
+                nisi?
+              </p>
+              <!-- <button class="btn">Read More</button> -->
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="./image/home3.png" alt="Blog" loading="lazy" />
+            </div>
+            <div class="content">
+              <h3>Blog Title Goes Here</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam,
+                nisi?
+              </p>
+              <!-- <button class="btn">Read More</button> -->
+            </div>
+          </div>
+          <div class="swiper-slide slide">
+            <div class="image">
+              <img src="./image/home3.png" alt="Blog" loading="lazy" />
+            </div>
+            <div class="content">
+              <h3>Blog Title Goes Here</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam,
+                nisi?
+              </p>
+              <!-- <button class="btn">Read More</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  =============== Footer Section =============== -->
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer-box">
+          <a href="/index.html"
+            ><img
+              src="./image/kst_logo.png"
+              alt="Logo"
+              width="100px"
+              loading="lazy"
+          /></a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quia
+            Lorem ipsum dolor sit amet.
+          </p>
+          <div class="social">
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+          </div>
+        </div>
+        <div class="footer-box">
+          <h3>Pages</h3>
+          <a href="/index.html">Home</a>
+          <a href="/about.html">About Us</a>
+          <a href="/about.html">Products</a>
+          <a href="/contact.html">Contact Us</a>
+          <!-- <a href="#Certificate">Certificate</a> -->
+        </div>
+        <div class="footer-box">
+          <h3>Opening Hours</h3>
+          <a href="#">Monday - Friday</a>
+          <a href="#">Saturday - Sunday</a>
+        </div>
+        <div class="footer-box">
+          <h3>Contact Info</h3>
+          <p>Mumbra Kausa</p>
+          <p>Thane</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==================== WhatsApp ============================ -->
+    <div class="whatsapp_float" data-aos="zoom-in">
+      <a
+        class="analysisBtn"
+        data-platform="whatsapp"
+        href="https://api.whatsapp.com/send?phone=9967027885&text=Hello,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+        target="_blank"
+      >
+        <i class="ri-whatsapp-line" style="color: #24e531"></i>
+      </a>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      function resetForm(event, form) {
+        // Let the form submit normally first
+        setTimeout(() => {
+          form.reset(); // Reset the form after submission
+        }, 500); // Delay to ensure data is sent
+      }
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./main.js"></script>
+  </body>
+</html>
